@@ -18,7 +18,7 @@
 
     <groupId>guru.springframework</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.4</version>
+    <version>1.0.XX</version>
     <name>sfg-pet-clinic</name>
     <description>SFG-Pet-Clinic Project</description>
     <properties>
@@ -26,6 +26,7 @@
     </properties>
     <build>
         <plugins>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -36,16 +37,15 @@
                 <version>2.5.2</version>
                 <configuration>
                     <goals>install</goals>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
+<!--                    <autoVersionSubmodules>true</autoVersionSubmodules>-->
                 </configuration>
             </plugin>
         </plugins>
     </build>
     <scm>
-        <developerConnection>
-            scm:git:git@github.com:RaduJava/sfg-pet-clinic.git
-        </developerConnection>
-      <tag>sfg-pet-clinic-0.0.4</tag>
+        <developerConnection>scm:git:https://github.com/RaduJava/sfg-pet-clinic.git</developerConnection>
+<!--      <tag>sfg-pet-clinic-0.0.4</tag>-->
+    <tag>sfg-pet-clinic-1.0.XX</tag>
   </scm>
 
 </project>
