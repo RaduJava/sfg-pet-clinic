@@ -35,8 +35,8 @@ public class DataLoader implements CommandLineRunner {
 
         Vet gicu = new Vet();
         gicu.setId(1L);
-        gicu.setFirstName("Ion");
-        gicu.setLastName("Turcan");
+        gicu.setFirstName("Gicu");
+        gicu.setLastName("Tarus");
         vetService.save(gicu);
 
         Vet petru = new Vet();

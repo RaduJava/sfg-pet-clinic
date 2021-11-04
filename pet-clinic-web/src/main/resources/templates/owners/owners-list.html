@@ -19,6 +19,7 @@
     <tbody>
     <tr th:each="tempOwner : ${owners}">
         <td th:text="${tempOwner.id}"></td>
+        <td th:text="${tempOwner.firstName}"></td>
         <td th:text="${tempOwner.lastName}"></td>
     </tr>
     </tbody>
