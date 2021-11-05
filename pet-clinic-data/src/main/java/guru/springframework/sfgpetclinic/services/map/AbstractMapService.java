@@ -22,7 +22,7 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
             }
             map.put(object.getId(), object);
         } else {
-            new RuntimeException("Object cannot be null");
+            new RuntimeException("Object cannot be null");;
         }
 
         return object;
