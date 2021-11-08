@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Set;
 
 @Controller
+@RequestMapping("/owners")
 public class OwnerController {
     private final OwnerService ownerService;
 
@@ -21,5 +22,10 @@ public class OwnerController {
         Set<Owner> ownerSet = ownerService.findAll();
         model.addAttribute("owners", ownerSet);
         return "owners/owners-list";
+    }
+
+    @RequestMapping({"/find", "/oups"})
+    public String findOwners() {
+        return "notimplemented";
     }
 }
