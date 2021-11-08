@@ -28,11 +28,11 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
         PetType dog = new PetType();
         dog.setName("Dog");
-        PetType savePetTypeDog = petTypeService.save(dog);
+//        PetType savePetTypeDog = petTypeService.save(dog);
 
         PetType cat = new PetType();
         cat.setName("Cat");
-        PetType savePetTypeCat = petTypeService.save(cat);
+//        PetType savePetTypeCat = petTypeService.save(cat);
 
         Owner ion = new Owner();
         ion.setFirstName("Ion");
@@ -47,7 +47,9 @@ public class DataLoader implements CommandLineRunner {
         ionPet.setOwner(ion);
         ionPet.setBirthDay(LocalDate.now());
         ionPet.setName("Olaf");
+
         ion.getPets().add(ionPet);
+
         ownerService.save(ion);
 
         Owner radu = new Owner();
