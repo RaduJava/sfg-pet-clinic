@@ -80,7 +80,7 @@ public class DataLoader implements CommandLineRunner {
         radu.setLastName("Gribincea");
         radu.setAddress("Dimo 12");
         radu.setCity("Balti");
-        ion.setTelephone("079234232");
+        radu.setTelephone("079234232");
 
         Pet raduPet = new Pet();
         raduPet.setPetType(cat);
