@@ -1,6 +1,9 @@
 package guru.springframework.sfgpetclinic.model;
 
-import lombok.*;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -33,7 +36,9 @@ public class Pet extends BaseEntity {
         this.owner = owner;
         this.birthDate = birthDay;
         this.name = name;
-        this.visits = visits;
+        if (visits != null || visits.size() > 0) {
+            this.visits = visits;
+        }
     }
 
     public Pet(PetType petType, Owner owner, LocalDate birthDay, String name, Set<Visit> visits) {
