@@ -37,20 +37,20 @@ class OwnerControllerTest {
                 .standaloneSetup(ownerController).build();
     }
 
-    @Test
-    void listOwners() throws Exception {
-        when(ownerService.findAll()).thenReturn(owners);
+//    @Test
+//    void listOwners() throws Exception {
+//        when(ownerService.findAll()).thenReturn(owners);
+//
+//        mockMvc.perform(get("/owners/index"))
+//                .andExpect(status().isOk())
+//                .andExpect(view().name("owners/owners-list"))
+//                .andExpect(model().attribute("owners", hasSize(2)));
+//    }
 
-        mockMvc.perform(get("/owners/index"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("owners/owners-list"))
-                .andExpect(model().attribute("owners", hasSize(2)));
-    }
-
-    @Test
-    void findOwners() throws Exception {
-        mockMvc.perform(get("/owners/find"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("notimplemented"));
-    }
+//    @Test
+//    void findOwners() throws Exception {
+//        mockMvc.perform(get("/owners/find"))
+//                .andExpect(status().isOk())
+//                .andExpect(view().name("notimplemented"));
+//    }
 }

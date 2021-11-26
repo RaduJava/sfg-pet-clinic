@@ -46,7 +46,7 @@ public class VisitController {
     }
 
     @PostMapping("/owners/{ownerId}/pets/{petId}/visits/new")
-    public String processNewVisitForm(@Valid Visit visit, BindingResult result) {
+    public String processNewVisitForm(@Valid Visit visit, BindingResult result, Model model) {
         if (result.hasErrors()) {
             return "pets/createOrUpdateVisitForm";
         } else {

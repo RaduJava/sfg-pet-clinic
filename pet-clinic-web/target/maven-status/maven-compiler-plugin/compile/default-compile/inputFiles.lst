@@ -3,3 +3,6 @@ C:\Users\Radu\sfg-pet-clinic\pet-clinic-web\src\main\java\guru\springframework\s
 C:\Users\Radu\sfg-pet-clinic\pet-clinic-web\src\main\java\guru\springframework\sfgpetclinic\SfgPetClinicApplication.java
 C:\Users\Radu\sfg-pet-clinic\pet-clinic-web\src\main\java\guru\springframework\sfgpetclinic\bootstrap\DataLoader.java
 C:\Users\Radu\sfg-pet-clinic\pet-clinic-web\src\main\java\guru\springframework\sfgpetclinic\controller\VetController.java
+C:\Users\Radu\sfg-pet-clinic\pet-clinic-web\src\main\java\guru\springframework\sfgpetclinic\controller\PetController.java
+C:\Users\Radu\sfg-pet-clinic\pet-clinic-web\src\main\java\guru\springframework\sfgpetclinic\controller\VisitController.java
+C:\Users\Radu\sfg-pet-clinic\pet-clinic-web\src\main\java\guru\springframework\sfgpetclinic\formaters\PetTypeFormatter.java
