@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -23,6 +24,7 @@ public class Pet extends BaseEntity {
     @JoinColumn(name = "owner_id")
     private Owner owner;
     @Column(name = "bith_date")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthDate;
     @Column(name = "name")
     private String name;
@@ -36,7 +38,7 @@ public class Pet extends BaseEntity {
         this.owner = owner;
         this.birthDate = birthDay;
         this.name = name;
-        if (visits != null || visits.size() > 0) {
+        if (visits == null || visits.size() > 0) {
             this.visits = visits;
         }
     }
